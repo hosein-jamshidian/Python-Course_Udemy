@@ -1,54 +1,56 @@
 # 9.1
-#
-# student_scores={
-#     "Harry":81,
-#     "Ron":78,
-#     "Hermione":99,
-#     "Draco":74,
-#     "Neville":62
-# }
-#
-# student_grades={}
-# # student_grades["Harry"]="Exeeds Expectations"
-# # student_grades["Ron"]="Acceptable"
-# # student_grades["Hermione"]="Outstanding"
-# # student_grades["Draco"]="Acceptable"
-# # student_grades["Neville"]="Fail"
-#
-# print(student_grades)
-#
-# for key in student_scores:
-#     if student_scores[key]>90:
-#         student_grades[key]="Outstanding"
-#     elif student_scores[key]>80:
-#         student_grades[key] = "Exeeds Expectations"
-#     elif student_scores[key]>70:
-#         student_grades[key]="Acceptable"
-#     else:
-#         student_grades[key]="Fail"
-# print(student_grades)
+
+student_scores={
+    "Harry":81,
+    "Ron":78,
+    "Hermione":99,
+    "Draco":74,
+    "Neville":62
+}
+
+student_grades={}
+# student_grades["Harry"]="Exeeds Expectations"
+# student_grades["Ron"]="Acceptable"
+# student_grades["Hermione"]="Outstanding"
+# student_grades["Draco"]="Acceptable"
+# student_grades["Neville"]="Fail"
+
+print(student_grades)
+
+for key in student_scores:
+    if student_scores[key]>90:
+        student_grades[key]="Outstanding"
+    elif student_scores[key]>80:
+        student_grades[key] = "Exeeds Expectations"
+    elif student_scores[key]>70:
+        student_grades[key]="Acceptable"
+    else:
+        student_grades[key]="Fail"
+print(student_grades)
 
 #9.2
 
-# travel_log=[
-#     {'country':'France',
-#      'cities':['paris','lille','dijon'],
-#      'visits':12},
-#     {'country':'german',
-#      'cities':['berlin','humborg'],
-#      'visits':10
-#     }
-# ]
-#
-# def add_new_country(country_name,country_visits,country_cities):
-#     new_country={}
-#     new_country["country"]=country_name
-#     new_country["'cities"]=country_cities
-#     new_country["visits"]=country_visits
-#     travel_log.append(new_country)
-# add_new_country('russia',14,['berlin','humborg'])
-# print(travel_log)
-#
+travel_log=[
+    {'country':'France',
+     'cities':['paris','lille','dijon'],
+     'visits':12},
+    {'country':'german',
+     'cities':['berlin','humborg'],
+     'visits':10
+    }
+]
+
+def add_new_country(country_name,country_visits,country_cities):
+    new_country={}
+    new_country["country"]=country_name
+    new_country["'cities"]=country_cities
+    new_country["visits"]=country_visits
+    travel_log.append(new_country)
+add_new_country('russia',14,['berlin','humborg'])
+print(travel_log)
+
+
+
 # #FINAL:
 #
 import art
