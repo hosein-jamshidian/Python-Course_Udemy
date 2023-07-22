@@ -1,0 +1,32 @@
+menu={
+    "cuppoccino":{
+        "ingredients":{
+            'milk':100,
+            'water':250,
+            'coffee':24
+        },
+        "cost":3
+    },
+"latte":{
+        "ingredients":{
+            'milk':150,
+            'water':200,
+            'coffee':24
+        },
+        "cost":2.5
+    },
+"espperso":{
+        "ingredients":{
+            'water':50,
+            'coffee':18
+        },
+        "cost":1.5
+    },
+}
+coin={
+    "penny":.01,
+    "dime":.1,
+    'nickel':.05,
+    'quarter':.25
+}
+# print(menu["espperso"]['ingredients']['water'])
