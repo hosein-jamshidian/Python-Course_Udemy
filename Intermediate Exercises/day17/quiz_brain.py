@@ -21,5 +21,3 @@ class Quiz:
             print("you Wrong")
         print(f"the True answer is {right_answer}")
         print(f"the score you collect till now :{self.score}/{self.question_number}")
-
-
