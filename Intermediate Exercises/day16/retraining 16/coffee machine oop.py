@@ -92,7 +92,4 @@ while is_on:
     if mm.payment(drink.cost):
         if cm.is_resource_sufficientis(drink):
             cm.makecoffee(drink)
-        
-        
-        
 
