@@ -8,7 +8,6 @@ class MenuItem:
             "coffee":coffee
         }
 
-
 class Menu:
     def __init__(self):
         self.menu=[
