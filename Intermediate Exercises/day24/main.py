@@ -4,7 +4,6 @@ with open('Mail Merge Project Start/Input/Letters/starting_letter.txt') as file:
 
 with open('Mail Merge Project Start/Input/Names/invited_names.txt') as file:
     names=file.read().split()
-
 # TODO: list of names
 
 for name in names:
