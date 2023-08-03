@@ -45,10 +45,7 @@ class Pointer(Turtle):
 #TODO: last announcement that show total results.
 
     def residual_state(self):
-        res=[]
-        for state in list(df['state']) :
-            if state not in self.correct_list:
-                res.append(state)
+        res= [state for state in list(df['state']) if state not in self.correct_list]
         res=pd.DataFrame(res,columns=['state'])
         res.to_csv('residual_states.csv')
 
