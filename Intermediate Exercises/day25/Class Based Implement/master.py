@@ -5,8 +5,11 @@ from pointer import Pointer
 screen=Screen()
 screen.title('U.S state game')
 screen.bgpic('blank_states_img.gif')
+#TODO: make screen prepare.
 
 pointer=Pointer()
+
+#TODO: calling Pointer class.
 
 while len(pointer.correct_list)<50:
     suggest = screen.textinput(title=f'{len(pointer.correct_list)}/50 States Correct',
@@ -17,5 +20,7 @@ while len(pointer.correct_list)<50:
 
 pointer.final_results()
 pointer.residual_state()
+
+#TODO: while loop that make U.S game.
 
 screen.exitonclick()
