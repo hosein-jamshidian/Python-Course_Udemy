@@ -2,6 +2,7 @@ from turtle import Turtle
 import pandas as pd
 
 df=pd.read_csv('50_states.csv')
+
 # TODO: csv file consist of states name and x,y coordinate in image.
 
 class Pointer(Turtle):

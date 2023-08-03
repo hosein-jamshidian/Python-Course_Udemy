@@ -5,6 +5,7 @@ from pointer import Pointer
 screen=Screen()
 screen.title('U.S state game')
 screen.bgpic('blank_states_img.gif')
+
 #TODO: make screen prepare.
 
 pointer=Pointer()
