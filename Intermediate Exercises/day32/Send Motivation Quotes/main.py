@@ -9,12 +9,14 @@ PASSWORD= "specific password"
 with open('../quotes.txt') as file:
     quotes= file.readlines()
 
+# ------------------------------------------- Choose Random Quote ------------------------------------------
 chosen=random.choice(quotes)
 AUTHOR= chosen.split(' - ')[1]
 TEXT= chosen.split(' - ')[0]
 
 TIME= dt.datetime.now().weekday()
 
+#------------------------------------------ Connection To mail with smtplib ---------------------------------
 with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.starttls()
     connection.login(user=USERNAME, password=PASSWORD)

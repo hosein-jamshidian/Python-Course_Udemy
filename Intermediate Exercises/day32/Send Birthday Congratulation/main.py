@@ -13,7 +13,6 @@ MONTH= NOW.month
 DAY= NOW.day
 
 #---------------------------------------------- Conditions -----------------------------------------------
-
 for k,v in individuals.iterrows():
     if (v['month']==MONTH) & (v['day']==DAY):
         with open('../006 birthday-wisher-extrahard-start/letter_templates/letter_1.txt') as file:
@@ -21,7 +20,6 @@ for k,v in individuals.iterrows():
             letter=let.replace('[NAME]',v['name']).replace('Angela','Hosein Jamshidian')
 
 #---------------------------------------------- Send Mail With SMTP Class -------------------------------------
-
             with smtplib.SMTP('smtp.gmail.com') as connection:
                 connection.starttls()
                 connection.login(user=USERNAME, password=PASSWORD)
