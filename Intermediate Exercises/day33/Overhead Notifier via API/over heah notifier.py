@@ -34,6 +34,7 @@ def is_night(latitude,longitude):
 
     sunrise = int(pd.to_datetime(weather_data['sunrise']).hour + CORRECT_ASSUMPTION)
     sunset = int(pd.to_datetime(weather_data['sunset']).hour + CORRECT_ASSUMPTION)
+    # point: I've been used CORRECT_ASSUMPTION Because The Time Iformation that receive from Api is Not correct.
     my_hour = int(datetime.datetime.now().hour)
 
     if (sunset) < (my_hour) < (sunrise):
