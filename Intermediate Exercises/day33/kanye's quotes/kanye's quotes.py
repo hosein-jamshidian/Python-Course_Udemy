@@ -9,7 +9,6 @@ window.config(padx=50, pady=50)
 def next():
     response = requests.get(url='https://api.kanye.rest')
     quote = response.json()['quote']
-    print(quote)
     canvas.itemconfig(kanye_quotes,text=quote)
 
 #------------------------------------------- Set UI -------------------------------------------------------------------
@@ -22,6 +21,7 @@ canvas.grid(row=0, column=0)
 kanye_img=PhotoImage(file='../kanye.png')
 kanye_button= Button(image=kanye_img,command=next)
 kanye_button.grid(row=1, column=0)
+
 next()
 
 window.mainloop()
