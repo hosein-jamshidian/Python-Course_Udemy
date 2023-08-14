@@ -57,4 +57,4 @@ while IS_ON:
     if (position_right(LAT,LONG)) and (is_night(LAT,LONG)):
         send_mail(USERNAME,PASSWORD)
 
-# TODO: check every hour == (60sec*60min)
+# TODO: check every hour (60sec*60min)
