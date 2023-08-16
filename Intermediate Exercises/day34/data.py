@@ -10,6 +10,3 @@ params={
 # ------------------------------------------ Get Data From Open Trivia DB ---------------------------------------------
 req=requests.get(url='https://opentdb.com/api.php', params= params)
 total_question= req.json()['results']
-
-
-
