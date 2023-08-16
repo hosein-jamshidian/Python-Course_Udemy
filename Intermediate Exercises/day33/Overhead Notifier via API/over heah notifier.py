@@ -12,7 +12,7 @@ USERNAME='hoseinjamshidian1998@gmail.com'
 PASSWORD='specific password'
 
 #----------------------------------------------- Check Location Of ISS -----------------------------------------------
-def position_right(latitude,longitude):
+def position_right(latitude:float, longitude:float)->bool:
     req_iss = requests.get(url='http://api.open-notify.org/iss-now.json')
     iss_data = req_iss.json()
     iss_long = float(iss_data['iss_position']['longitude'])
@@ -22,7 +22,7 @@ def position_right(latitude,longitude):
         return True
 
 #----------------------------------------------- Check Night  --------------------------------------------------------
-def is_night(latitude,longitude):
+def is_night(latitude:float, longitude:float)->bool:
     global CORRECT_ASSUMPTION
 
     params = {
@@ -41,7 +41,7 @@ def is_night(latitude,longitude):
         return True
 
 #----------------------------------------------- Send Mail ----------------------------------------------------------
-def send_mail(username,password):
+def send_mail(username:str,password:str) :
     with smtplib.SMTP(host='smtp.gmail.com') as connection:
         connection.starttls()
         connection.login(user=USERNAME, password=PASSWORD)
